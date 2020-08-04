@@ -6,9 +6,10 @@ var eta = prompt("Inserisci l'età");
 var prezzo = 0.21 * km;
 console.log(prezzo);
 
-if (eta <= 18){
+if (eta <= 18) {
   var sconto = ((prezzo * 20) / 100);
-}else (eta >= 65){
+} else if (eta >= 65) {
   var sconto = ((prezzo * 40) / 100);
 }
-console.log(sconto)
+console.log(sconto);
+document.getElementById('ticket').innerHTML = "Prezzo con sconto applicato :" + " " + (prezzo - sconto);
