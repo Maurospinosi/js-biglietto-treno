@@ -14,9 +14,11 @@ if (eta <= 18) {
   var sconto = 0;
 }
 console.log(sconto);
+
 // prezzo con sconto appliacto
 var prezzoScontato = (prezzo - sconto);
+var n = prezzoScontato.toFixed(2);
 console.log(prezzo - sconto);
 
-document.getElementById('ticket-s').innerHTML = "Prezzo con sconto applicato :" + " " + prezzoScontato + "€";
+document.getElementById('ticket-s').innerHTML = "Prezzo con sconto applicato :" + " " + n + "€";
 document.getElementById('ticket').innerHTML = "Prezzo :" + " " + prezzo + "€";
