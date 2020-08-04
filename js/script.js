@@ -10,6 +10,8 @@ if (eta <= 18) {
   var sconto = ((prezzo * 20) / 100);
 } else if (eta >= 65) {
   var sconto = ((prezzo * 40) / 100);
+} else {
+  var sconto = 0;
 }
 console.log(sconto);
 // prezzo con sconto appliacto
